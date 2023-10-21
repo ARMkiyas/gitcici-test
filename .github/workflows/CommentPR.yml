@@ -23,4 +23,3 @@ jobs:
         run: unzip release.zip
       - name: 'Deploy to Azure Web App'
         run: echo " all success"
-  
