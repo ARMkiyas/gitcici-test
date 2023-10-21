@@ -15,7 +15,6 @@ jobs:
       github.event.workflow_run.event == 'pull_request' &&
       github.event.workflow_run.conclusion == 'success'
     steps:
-      - name: 'Download artifact'
       - name: Download artifact from build job
         uses: actions/download-artifact@v2
         with:
