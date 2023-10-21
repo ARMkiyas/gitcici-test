@@ -11,10 +11,15 @@ jobs:
 
     steps:        
       - uses: actions/checkout@v2
-
-      # imitation of a build process
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+      - run: npm install -g pnpm     
+      - name: install dependacies    
+        run: pnpm i
       - name: Build
-        run: /bin/bash ./build.sh
+        run: pnpm build
 
   uploadArtifact:
     runs-on: ubuntu-latest
