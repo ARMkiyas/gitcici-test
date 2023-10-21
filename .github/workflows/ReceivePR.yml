@@ -21,6 +21,10 @@ jobs:
       - name: Build
         run: pnpm build
 
+  uploadArtifact:
+    runs-on: ubuntu-latest
+    needs: [build]
+    steps:  
       - name: Save PR number
         run: |
           mkdir -p ./pr
