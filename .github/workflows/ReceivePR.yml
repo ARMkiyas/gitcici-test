@@ -15,6 +15,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18.x'
+      - run: npm install -g pnpm     
       - name: install dependacies    
         run: pnpm i
       - name: Build
