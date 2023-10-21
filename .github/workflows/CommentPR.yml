@@ -43,6 +43,7 @@ jobs:
               # Action to perform
               action: "upload"
               azure_static_web_apps_api_token: ${{secrets.AZURE_DEPLOY_TOKEN}}
+              app_location: ./
               app_artifact_location: ./
               
               
