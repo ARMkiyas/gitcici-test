@@ -16,6 +16,10 @@ jobs:
       - name: Build
         run: /bin/bash ./build.sh
 
+  uploadArtifact:
+    runs-on: ubuntu-latest
+    needs: [build]
+    steps:  
       - name: Save PR number
         run: |
           mkdir -p ./pr
