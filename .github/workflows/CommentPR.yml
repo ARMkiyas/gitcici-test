@@ -37,3 +37,15 @@ jobs:
               fs.writeFileSync('${{github.workspace}}/dist.zip', Buffer.from(download.data));
         - run: unzip dist.zip
         - run: echo "suucess"
+        - name: Azure Static Web Apps Deploy
+        - name: Azure Static Web Apps Deploy
+          uses: Azure/static-web-apps-deploy@v1
+          with:
+              # Action to perform
+              action: "upload"
+              azure_static_web_apps_api_token: ${{secrets.AZURE_DEPLOY_TOKEN}}
+              app_artifact_location: ./
+              
+              
+           
+        
