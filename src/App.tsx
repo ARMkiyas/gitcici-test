@@ -22,7 +22,7 @@ function App() {
           count is {count}
         </button>
         <p>
-          Edit <code>src/App.tsx</code> and savse to test HMR and ci/cd pipeline 
+          Edit <code>src/App.tsx</code> and sase to test HMR and ci/cd pipeline 
         </p>
       </div>
       <p className="read-the-docs">
