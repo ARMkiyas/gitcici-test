@@ -4,7 +4,6 @@ name: Comment on
 on:
   workflow_run:
     workflows: ["Receive PR"]
-    branches: [main]
     types:
       - completed
 jobs:
